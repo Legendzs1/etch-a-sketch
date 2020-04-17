@@ -1,0 +1,32 @@
+
+
+  body {
+      background-color: black;
+      text-align: center;
+  }
+
+
+  .cell {
+    border: 1px solid gray;
+    min-width: 20px;
+    min-height: 20px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+
+  #gridContainer {
+      border: 1px solid white;
+      width: 417px;
+      height: 416px;
+      margin: auto;
+
+  }
+  .gridRow {
+
+  }
+
+  h1 {
+      color: white;
+  }
