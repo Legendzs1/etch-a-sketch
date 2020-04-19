@@ -31,3 +31,31 @@ function makeColumns(cellNum) {
 
     };
 };
+
+document.getElementById("gridContainer").addEventListener("mouseover",function(e) {
+    if(e.target && e.target.matches("div.cell")) {
+        e.target.style.backgroundColor = 	"#b57edc";
+    }
+})
+
+
+function resetBColor(e) {
+    //let getResetButton = document.getElementById("resetColor")
+//    document.getElementById("resetColor").addEventListener("onclick",function(e) {
+        //console.log(e)
+    //}
+//)
+   //console.log(getResetButton)
+   //document.body.style.backgroundColor = "white";
+
+   let getCells = document.getElementsByClassName("cell");
+   console.log(getCells[0].style.backgroundColor);
+    
+   //console.log(getCells.length);
+    for( cell of getCells) {
+        cell.style.backgroundColor = "black";
+        //console.log(cell.style)
+    }
+}
+
+
